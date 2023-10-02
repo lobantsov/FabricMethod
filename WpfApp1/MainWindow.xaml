@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Name="MainWindows"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Name="MainGrid">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label FontSize="20" HorizontalAlignment="Center">Choice quastion type</Label>
+            <ComboBox Name="CBButtonsType" Height="30" VerticalAlignment="Top" Margin="0,40,0,0"/>
+            <Button Name="BTCreate" Height="30" VerticalAlignment="Top" Click="BTCreate_OnClick" Margin="0,338,0,0">Create</Button>
+            <Button Name="BTDelete" Height="30" VerticalAlignment="Bottom" Click="BTDelete_OnClick">Delete</Button>
+            <Label VerticalAlignment="Top" Margin="0,87,0,0" FontSize="20" HorizontalAlignment="Center">Load quastion and answers</Label>
+            <Button Name="BTLoadFile" Height="30" VerticalAlignment="Top" Margin="0,151,42,0" Click="BTLoadFile_OnClick_">Load</Button>
+            <Button Name="BTClearFile" Height="30" Width="30" VerticalAlignment="Top" Margin="213,151,7,0" IsEnabled="False" Click="BTClearFile_OnClick">CC</Button>
+            <ContentControl Name="ContentControl" Grid.Column="1"></ContentControl>
+        </Grid>
+    </Grid>
+</Window>
